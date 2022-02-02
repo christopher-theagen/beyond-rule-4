@@ -71,7 +71,8 @@ export class TextComponent implements OnInit, OnChanges {
     }
 
     const options = { year: 'numeric', month: 'short' };
-    return forecastDate.toLocaleDateString('en-US', options);
+    // return forecastDate.toLocaleDateString('en-US', options);
+    return forecastDate.toLocaleDateString('en-US');
   }
 
   getDistanceText(forecastDate: Date) {

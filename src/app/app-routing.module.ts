@@ -2,8 +2,17 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: '**', redirectTo: '/home' }
+  { 
+    path: '', 
+    // redirectTo: '/home', 
+    redirectTo: '/forecasting', 
+    pathMatch: 'full' 
+  },
+  { 
+    path: '**', 
+    // redirectTo: '/home' 
+    redirectTo: '/forecasting' 
+}
 ];
 
 @NgModule({

@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" routerLink="/">
+  <a class="navbar-brand" routerLink="/forecasting">
     <span class="font-weight-bold font-italic">
       Beyond
     </span>
@@ -12,7 +12,7 @@
   </button>
 
   <div class="navbar-collapse" [ngClass]="{collapse: !isOpen}" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <!-- <ul class="navbar-nav mr-auto">
       <li class="nav-item" routerLinkActive="active" routerLink="/home">
         <a class="nav-link">Home</a>
       </li>
@@ -35,6 +35,6 @@
       </button>
       <button *ngIf="isAuthorized" class="btn btn-outline-primary my-2 my-sm-0" (click)="logOut()" type="button">Log
         Out</button>
-    </form>
+    </form> -->
   </div>
 </nav>

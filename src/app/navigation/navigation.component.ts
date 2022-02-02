@@ -1,28 +1,29 @@
 import { Component, OnInit } from '@angular/core';
 
-import { YnabApiService } from '../ynab-api/ynab-api.service';
+// import { YnabApiService } from '../ynab-api/ynab-api.service';
 
 @Component({
   selector: 'app-navigation',
   templateUrl: 'navigation.component.html'
 })
 
-export class NavigationComponent implements OnInit {
+// export class NavigationComponent implements OnInit {
+export class NavigationComponent {
   isOpen = false;
   isAuthorized = false;
 
-  constructor(private ynabApiService: YnabApiService) { }
+  // constructor(private ynabApiService: YnabApiService) { }
 
-  ngOnInit() {
-    this.ynabApiService.isAuthorized$.subscribe({next: (isAuthorized) => this.isAuthorized = isAuthorized});
-   }
+  // ngOnInit() {
+  //   // this.ynabApiService.isAuthorized$.subscribe({next: (isAuthorized) => this.isAuthorized = isAuthorized});
+  //  }
 
-  authorize() {
-    this.ynabApiService.authorize();
-  }
+  // authorize() {
+  //   // this.ynabApiService.authorize();
+  // }
 
-  logOut() {
-    this.ynabApiService.clearToken();
-    window.location.reload(false);
-  }
+  // logOut() {
+  //   // this.ynabApiService.clearToken();
+  //   window.location.reload();
+  // }
 }
